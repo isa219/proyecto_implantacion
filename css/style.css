@@ -1,0 +1,58 @@
+#logo {
+	font-size: 2em;
+	color: blue;
+	padding-left: 0.7em;
+}
+#menu_sup_acceder {
+	text-align: center;
+	float: right;
+	margin-top: 0em;
+	margin-right: 0em;
+	border: 1px blue solid;
+	color: white;
+	background-color: blue;
+	border-radius: 0.5em;
+	padding: 0.3em;
+	padding-right: 1em;
+}
+#menu_sup_comprar {
+	margin-left: 2em;
+	color:gray
+}
+#menu_sup_vender {
+	margin-left: 2em;
+	margin-bottom: 100em;
+	color: gray;
+}
+#fondo {
+	position: absolute;
+	width: 100%;
+    height: 12.5em;
+	top: 3em;
+	background-color: gray;
+    z-index: 1;
+}
+#menu_cen {
+	background-color: blue;
+	width: 97em;
+	margin-left: 9em;
+	margin-top: 1em;
+	position: absolute;
+	text-align: center;
+	padding-top: 1.5em;
+	border-radius: 1em;
+}
+#texto_fondo {
+	margin: 1px green solid;
+	position: absolute;
+	top: 11em;
+}
+#titulo_menu_cen {
+	color: white;
+	margin: 1px green solid;
+	font-size: 1.5em;
+	padding-bottom: 5em;
+}
+#menu_cen_comprar {
+	color: white;
+}
