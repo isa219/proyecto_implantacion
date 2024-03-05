@@ -2,6 +2,10 @@
 	font-size: 2em;
 	color: blue;
 	padding-left: 0.7em;
+	position: absolute;
+	top: 0.1em;
+	left: -0.5em;
+	font-weight: bold;
 }
 #menu_sup_acceder {
 	text-align: center;
@@ -13,21 +17,33 @@
 	background-color: blue;
 	border-radius: 0.5em;
 	padding: 0.3em;
-	padding-right: 1em;
+	padding-right: 0.5em;
+	padding-left: 0.3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	position: absolute;
+	right: 1em;
+	top: 0.3em;
 }
 #menu_sup_comprar {
 	margin-left: 2em;
-	color:gray
+	color: gray;
+	position: absolute;
+	left: 9em;
+	top: 1em;
 }
 #menu_sup_vender {
 	margin-left: 2em;
 	margin-bottom: 100em;
 	color: gray;
+	position: absolute;
+	left: 15em;
+	top: 1em;
 }
 #fondo {
 	position: absolute;
 	width: 100%;
-    height: 12.5em;
+    height: 16em;
 	top: 3em;
 	background-color: gray;
     z-index: 1;
@@ -41,11 +57,12 @@
 	text-align: center;
 	padding-top: 1.5em;
 	border-radius: 1em;
+	height: 10em;
 }
 #texto_fondo {
 	margin: 1px green solid;
 	position: absolute;
-	top: 11em;
+	top: 13em;
 }
 #titulo_menu_cen {
 	color: white;
@@ -55,4 +72,196 @@
 }
 #menu_cen_comprar {
 	color: white;
+}
+#caja_login {
+	background-color: white;
+	width: 30em;
+	height: 13em;
+	margin-left: 40em;
+	margin-top: 1em;
+	position: absolute;
+	text-align: center;
+	padding-top: 1.5em;
+	border-radius: 1em;
+	border: 1px black solid;
+}
+#cerrar_login {
+	position: absolute;
+	bottom: 6.2em;
+	left: 14em;
+	font-size: 2em;
+	color: gray;
+}
+#titulo_login {
+	font-size: 2em;
+	position: absolute;
+	right: 1.5em;
+}
+#email_login {
+	padding: 0.5em;
+	width: 29em;
+	position: absolute;
+	left: 0.0em;
+	top: 5em;
+}
+#boton_login {
+	position: absolute;
+	top: 5em;
+	width: 5em;
+	font-size: 0.6em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 20em;
+	background-color: blue;
+	border-radius: 1em;
+	right: -0.3em;
+	top: 6em;
+}
+.enlace {
+	text-decoration: none;
+	color: inherit;
+}
+#buscar_index {
+	padding: 1em;
+	width: 107em;
+	top: 1em;
+	position: absolute;
+	top: 8em;
+	right: 8em;
+}
+#boton_buscar_index {
+	background-color: green;
+	padding: 0.6em;
+	position: absolute;
+	top: 8.3em;
+	right: 8.3em;
+	color: blue;
+}
+#caja_crear_cuenta {
+	border: 1px black solid;
+	position: absolute;
+	width: 40em;
+	left: 40em;
+	height: 40em;
+	border-radius: 1em;
+}
+#cerrar_creando {
+	position: absolute;
+	font-size: 2em;
+	color: gray;
+	left: 19em;
+}
+#titulo_creando {
+	font-size: 1.5em;
+	position: absolute;
+	top: 3em;
+	left: 10em;
+}
+#descripcion_creando {
+	position: absolute;
+	color: gray;
+	top: 9em;
+	width: 21em;
+	left: 9em;
+}
+#correo_creando {
+	position: absolute;
+	padding: 0.5em;
+	width: 30em;
+	top: 17em;
+	left: 8em;
+}
+#enlace_creando {
+	position: absolute;
+	top: 14.5em;
+	left: 33em;
+	color: blue;
+}
+#name_creando {
+	position: absolute;
+	padding: 0.5em;
+	width: 30em;
+	top: 21em;
+	left: 8em;
+}
+#password_creando {
+	position: absolute;
+	padding: 0.5em;
+	width: 30em;
+	left: 8em;
+	top: 25em;
+}
+#advertencia_creando {
+	position: absolute;
+	top: 24em;
+	left: 6.7em;
+}
+#politicas_creando {
+	position: absolute;
+	top: 31em;
+	left: 7.5em;
+}
+#advertencia_politicas_creando {
+	position: absolute;
+	top: 25.9em;
+	left: 8em;
+	width: 25em;
+}
+#crear_cuenta_creando {
+	position: absolute;
+	top: 35em;
+	width: 30em;
+	border-radius: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	left: 8em;
+	background-color: blue;
+	
+}
+#ya_tengo_creando {
+	position: absolute;
+	top: 35em;
+	left: 14em;
+	color: blue;
+}
+#caja_loguear_cuenta {
+	border: 1px black solid;
+	position: absolute;
+	width: 40em;
+	left: 40em;
+	height: 22em;
+	border-radius: 1em;
+}
+#correo_loguear {
+	position: absolute;
+	padding: 0.5em;
+	width: 30em;
+	left: 8em;
+	top: 10em;
+}
+#titulo_logueando {
+	font-size: 1.5em;
+	position: absolute;
+	top: 3em;
+	left: 4.5em;
+}
+#loguear_cuenta {
+	position: absolute;
+	top: 10em;
+	width: 20em;
+	border-radius: 0.5em;
+	padding-top: 1em;
+	padding-bottom: 0.5em;
+	padding-top: 0.5em;
+	left: 6em;
+	background-color: blue;
+	font-size: 1.2em;
+	color: white;
+}
+#tengo_cuenta {
+	position: absolute;
+	top: 15em;
+	left: 12em;
+	color: blue;
+	font-size: 1.2em;
 }
