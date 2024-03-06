@@ -8,7 +8,7 @@ clave VARCHAR(80) NOT NULL,
 tipo_usuario VARCHAR(20)
 );
 CREATE TABLE pisos (
-Codigo_piso INT PRIMARY KEY,
+Codigo_piso INT AUTO_INCREMENT,
 calle VARCHAR(40) NOT NULL,
 numero INT NOT NULL,
 piso INT NOT NULL,
@@ -18,7 +18,8 @@ metros INT NOT NULL,
 zona VARCHAR (15),
 precio FLOAT NOT NULL,
 imagen VARCHAR(100) NOT NULL,
-usuario_id INT(5)references usuario
+usuario_id INT(5)references usuario,
+PRIMARY KEY (Codigo_piso,usuario_id)
 );
 CREATE TABLE comprados (
 usuario_comprador INT(5) REFERENCES usuario (usuario_id),

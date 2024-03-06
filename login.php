@@ -25,25 +25,27 @@ if (!$conexion) {
 	$nfilas = mysqli_num_rows ($consulta1);
 	if ($nfilas > 0) {
 		echo "<div id='caja_loguear_cuenta'>";
-		echo "<span id='cerrar_creando'><a href='index.html' class='enlace'>x</a></span><br>";
+		echo "<span id='cerrar_creando'><a href='index.php' class='enlace'>x</a></span><br>";
 		echo "<span id='titulo_logueando'>¡Bienvenido de nuevo!</span><br>";
-		echo "<form action='creating_account.php' method='POST'><br>";
-		echo "<input type='password' name='password'id='correo_loguear' placeholder='Contraseña'><br>";
+		echo "<form action='loggin_account.php' method='POST'><br>";
+		echo "<input type='password' name='password' id='correo_loguear' placeholder='Contraseña'><br>";
+		echo "<input type='hidden' name='mi_correo' value='$email'><br>";
 		echo "<input type='submit' value='Iniciar sesion' id='loguear_cuenta'><br>";
 		echo "</form><br>";
 		echo "<span id='tengo_cuenta'><a href='login.html' class='enlace'>Regresar a mi cuenta</a><span><br>";
 		echo "</div>";
 	} else {
 		echo "<div id='caja_crear_cuenta'>";
-		echo "<span id='cerrar_creando'><a href='index.html' class='enlace'>x</a></span><br>";
+		echo "<span id='cerrar_creando'><a href='index.php' class='enlace'>x</a></span><br>";
 		echo "<span id='titulo_creando'>Crear tu cuenta</span><br>";
 		echo "<span id='descripcion_creando'>Por favor, comprueba que el email está bien escrito.<br>Este correo será asociado a tu cuenta y no podrás modificarlo.</span><br>";
 		echo "<form action='creating_account.php' method='POST'><br>";
 		echo "<input type='text' value='$email' readonly name='email'id='correo_creando'><span id='enlace_creando'><a href='login.html' class='enlace'>Editar</a></span><br>";
-		echo "<input type='text' placeholder='Mi nombre' name='name' id='name_creando'><br>";
-		echo "<input type='password' placeholder='Contraseña *' id='password_creando'><br>";
+		echo "<input type='text' placeholder='Mi nombre' name='name_creando_name' id='name_creando'><br>";
+		echo "<input type='password' placeholder='Contraseña *' id='password_creando' name='contrasena'><br>";
 		echo "<span id='advertencia_creando'>Utiliza un mínimo de 7 caracteres</span><br>";
 		echo "<input type='checkbox' name='politicas' id='politicas_creando'><br>";
+		echo "<input type='radio' name='tipo' id='tipo_creando_comprador' value='1'><span id='comprador_creando'> Comprador</span><input type='radio' name='tipo' id='tipo_creando_vendedor' value='2'><span id='vendedor_creando'>Vendedor</span><br>";
 		echo "<span id='advertencia_politicas_creando'>Acepto las condiciones de uso y la información básica de Protección de Datos *</span><br>";
 		echo "<input type='submit' value='Crear mi cuenta' id='crear_cuenta_creando'><br>";
 		echo "</form><br>";

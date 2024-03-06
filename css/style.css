@@ -198,18 +198,18 @@
 }
 #politicas_creando {
 	position: absolute;
-	top: 31em;
+	top: 33.6em;
 	left: 7.5em;
 }
 #advertencia_politicas_creando {
 	position: absolute;
-	top: 25.9em;
+	top: 28em;
 	left: 8em;
 	width: 25em;
 }
 #crear_cuenta_creando {
 	position: absolute;
-	top: 35em;
+	top: 39em;
 	width: 30em;
 	border-radius: 0.5em;
 	padding-top: 1em;
@@ -220,7 +220,7 @@
 }
 #ya_tengo_creando {
 	position: absolute;
-	top: 35em;
+	top: 37em;
 	left: 14em;
 	color: blue;
 }
@@ -264,4 +264,202 @@
 	left: 12em;
 	color: blue;
 	font-size: 1.2em;
+}
+#titulo_anuncio {
+	font-size: 1.5em;
+	position: absolute;
+	top: 3em;
+	left: 20em;
+}
+#precio_anuncio_titulo {
+	position: absolute;
+	top: 6em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#precio_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 30em;
+	top: 9.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#dudas_anuncio {
+	position: absolute;
+	top: 11em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#dudas_anuncio_enlace {
+	position: absolute;
+	top: 0em;
+	color: blue;
+	width: 21em;
+	left: 9.5em;
+	font-size: 1em;
+}
+#superficie_anuncio_titulo {
+	position: absolute;
+	top: 13em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#superficie_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 30em;
+	top: 18em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#numero_anuncio_titulo {
+	position: absolute;
+	top: 18em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#piso_anuncio_texto {
+	position: absolute;
+	top: 18em;
+	width: 21em;
+	left: 40em;
+	font-size: 1.2em;
+}
+#numero_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 30em;
+	top: 24em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#piso_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 48em;
+	top: 24em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#puerta_anuncio_titulo {
+	position: absolute;
+	top: 23em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#codigo_anuncio_texto {
+	position: absolute;
+	top: 23em;
+	width: 21em;
+	left: 40em;
+	font-size: 1.2em;
+}
+#puerta_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 30em;
+	top: 30em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#codigo_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 48em;
+	top: 30em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#direccion_anuncio_titulo {
+	position: absolute;
+	top: 28em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#calle_anuncio {
+	position: absolute;
+	width: 25em;
+	left: 30em;
+	top: 36em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#zona_anuncio {
+	position: absolute;
+	width: 17em;
+	left: 30em;
+	top: 39.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-size: 1em;
+}
+#foto_anuncio_titulo {
+	position: absolute;
+	top: 36em;
+	width: 21em;
+	left: 25em;
+	font-size: 1.2em;
+}
+#foto_anuncio {
+	position: absolute;
+	left: 36em;
+	top: 55em;
+}
+#crear_anuncio {
+	position: absolute;
+	top: 49em;
+	width: 6em;
+	font-size: 1em;
+	padding-right: 5.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	background-color: blue;
+	border-radius: 0.5em;
+	left: 50em;
+	color: white;
+}
+#tipo_creando_comprador {
+	position: absolute;
+	top: 31.1em;
+	left: 7.5em;
+}
+#comprador_creando {
+	position: absolute;
+	top: 26em;
+	left: 8em;
+}
+#tipo_creando_vendedor {
+	position: absolute;
+	top: 31.2em;
+	left: 16em;
+}
+#vendedor_creando {
+	position: absolute;
+	top: 26em;
+	left: 15em;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	width: 5em;
+	text-align: center;
+}
+img {
+	width: 17em;
 }
