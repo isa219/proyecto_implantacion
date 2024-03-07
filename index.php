@@ -10,10 +10,15 @@
 session_start();
 $sesion_abierta = $_SESSION['loggin'];
 $nombre = $_SESSION['usuario'];
+$tipo = $_SESSION['tipo'];
 if ( $sesion_abierta == true) {
-	echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'>Comprar</span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_acceder'><a href='logout.php' class='enlace'>👤 $nombre</a></span>";
+	if ($tipo == 3) {
+		echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'><a href='./comprar_piso.php' class='enlace'>Comprar</a></span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_admin'><a href='administracion.php' class='enlace'>Administración</a></span><span id='menu_sup_acceder'><a href='logout.php' class='enlace'>👤 $nombre</a></span>";
+	} else {
+		echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'><a href='./comprar_piso.php' class='enlace'>Comprar</a></span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_acceder'><a href='logout.php' class='enlace'>👤 $nombre</a></span>";
+	}
 } else {
-	echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'>Comprar</span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_acceder'><a href='login.html' class='enlace'>👤Acceder</a></span>";
+	echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'><a href='./comprar_piso.php' class='enlace'>Comprar</a></span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_acceder'><a href='login.html' class='enlace'>👤Acceder</a></span>";
 }
 ?>
 </div>

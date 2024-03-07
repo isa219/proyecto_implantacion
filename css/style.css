@@ -453,13 +453,32 @@
 	top: 26em;
 	left: 15em;
 }
-table {
+.tabla_pisos {
 	border-collapse: collapse;
 }
-td {
+.td_pisos {
 	width: 5em;
 	text-align: center;
 }
 img {
 	width: 17em;
+}
+#menu_sup_admin {
+	margin-left: 2em;
+	margin-bottom: 100em;
+	color: gray;
+	position: absolute;
+	left: 20em;
+	top: 1em;
+}
+.tabla_admin {
+	width: 10em;
+	height: 10em;
+	text-align: center;
+}
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 23em;
+	top: 13em;
 }
