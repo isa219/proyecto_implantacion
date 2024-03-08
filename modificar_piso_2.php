@@ -6,6 +6,7 @@ $cp= $_REQUEST["cp"];//mas controles
 $metros= $_REQUEST["metros"];//mas controles
 $zona= $_REQUEST["zona"];//mas controles
 $precio= $_REQUEST["precio"];//mas controles
+$puerta= $_REQUEST["puerta"];//mas controles
 $foto= $_REQUEST["foto"];//mas controles
 $id= $_REQUEST["id"];//mas controles
 
@@ -39,7 +40,6 @@ if(mysqli_query($conexion,$query))
 {
     echo "<script>";
 	echo "alert('Bien');";
-	header('Location: ./modificar_usuario.html'); 
 	echo "</script>";
 }
 else
@@ -47,6 +47,8 @@ else
     echo "mal";
 	echo $query;
 	echo $calle;
-}
+	echo "<br>";
+	echo $puerta;
+	}
 	}
 ?>

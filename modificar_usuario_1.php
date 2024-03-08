@@ -1,4 +1,7 @@
 <?php
+session_start();
+$tipo = $_SESSION['tipo'];
+if ($tipo == 3) {
 $correo= $_REQUEST["correo"];//mas controles
 $nombre= $_REQUEST["nombre"];//mas controles
 
@@ -35,4 +38,7 @@ $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 	}
 // Cerrar 
 mysqli_close ($conexion);
+} else {
+	echo "Zona no autorizada";
+}
 ?>

@@ -20,6 +20,7 @@ if ( $sesion_abierta == true) {
 } else {
 	echo "<span id='logo'>≡ fotocasa</span><span id='menu_sup_comprar'><a href='./comprar_piso.php' class='enlace'>Comprar</a></span><span id='menu_sup_vender'><a href='publicar_anuncio.php' class='enlace'>Vender</a></span><span id='menu_sup_acceder'><a href='login.html' class='enlace'>👤Acceder</a></span>";
 }
+
 ?>
 </div>
 <div id="fondo">

@@ -25,8 +25,10 @@ if ($tam <= 6 ) {
 		die("Conexion fallida: " . mysqli_connect_error());
 	} else {
 		$instruccion1 = "INSERT INTO usuario (nombres,correo,clave,tipo_usuario) VALUES ('$nombre','$correo','$password','$tipo');";
-		$consulta1 = mysqli_query ($conexion,$instruccion1) or die ("Fallo en la consulta de consulta.");
-		$resultado = mysqli_fetch_array ($consulta);
+		$consulta = mysqli_query ($conexion,$instruccion1) or die ("Fallo en la consulta de consulta.");
+		$instruccion2 = "SELECT * FROM usuario where correo LIKE '$correo' AND nombres LIKE '$nombre';";
+		$consulta2 = mysqli_query ($conexion,$instruccion2) or die ("Fallo en la consulta de consulta.");
+		$resultado = mysqli_fetch_array ($consulta2);
 		session_start();
 		$_SESSION['loggin'] = true;
 		$_SESSION['usuario'] = $nombre;

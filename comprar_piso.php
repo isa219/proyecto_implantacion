@@ -10,7 +10,7 @@ session_start();
 $sesion_abierta = $_SESSION['loggin'];
 $tipo = $_SESSION['tipo'];
 if ($sesion_abierta == true) {
-	if ($tipo == 3) {
+	if ($tipo == 1) {
 		$busqueda= $_REQUEST["busqueda"];//mas controles
 		include "conexion.php";
 		$conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
@@ -61,7 +61,7 @@ if ($sesion_abierta == true) {
 		}
 	} else {
 		echo "Solo pueden acceder los compradores.";
-		echo $_SESSION['tipo'];
+		
 	}
 } else {
 	header('Location: ./login.html'); 

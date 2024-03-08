@@ -1,4 +1,7 @@
 <?php
+session_start();
+$tipo = $_SESSION['tipo'];
+if ($tipo == 3) {
 $correo= $_REQUEST["correo"];//mas controles
 $nombre= $_REQUEST["nombre"];//mas controles
 $password= $_REQUEST["password"];//mas controles
@@ -27,4 +30,7 @@ else
 	echo "</script>";
 }
 	}
+} else {
+	echo "Zona no autorizada";
+}
 ?>

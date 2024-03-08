@@ -1,5 +1,7 @@
 <?php
-
+session_start();
+$tipo = $_SESSION['tipo'];
+if ($tipo == 3) {
 include "conexion.php";
 $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 	
@@ -31,5 +33,7 @@ $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 			print ("No hay usuarios."); 
 		}
 	}
-
+} else {
+	echo "Zona no autorizada";
+}
 ?>

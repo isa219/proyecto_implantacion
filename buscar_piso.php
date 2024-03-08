@@ -1,16 +1,21 @@
 <?php
+$calle= $_REQUEST["zona"];//mas controles
+$zona= $_REQUEST["calle"];//mas controles
 
 include "conexion.php";
 $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
-	
-	if (!$conexion) {
+
+if (!$conexion) {
 		die("Conexion fallida: " . mysqli_connect_error());
 	} else {
-		$instruccion = "SELECT * FROM pisos;";
-		$consulta = mysqli_query ($conexion,$instruccion) or die ("Fallo en la consulta de consulta.");
-		$nfilas = mysqli_num_rows ($consulta);
-		if ($nfilas > 0) {
-			print ("<TABLE class='tabla_pisos' border='1'>\n");
+		$instruccion1 = "SELECT * FROM pisos WHERE zona LIKE '$zona' OR calle LIKE '$calle';";
+		$consulta1 = mysqli_query ($conexion,$instruccion1) or die ("Fallo en la consulta de consulta.");
+		
+		// Mostrar resultados de la consulta
+		$nfilas = mysqli_num_rows ($consulta1);
+		if ($nfilas == 1) {
+			print ("<TABLE border='1'>\n");
+			print ("<TR>\n");
 			print ("<TR>\n");
 			print ("<TH>Imagen</TH>\n");
 			print ("<TH>Calle</TH>\n");
@@ -22,8 +27,9 @@ $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 			print ("<TH>Zona</TH>\n");
 			print ("<TH>Precio</TH>\n");
 			print ("</TR>\n");
+			print ("</TR>\n");
 			for ($i=0; $i<$nfilas; $i++) {
-				$resultado = mysqli_fetch_array ($consulta);
+				$resultado = mysqli_fetch_array ($consulta1);
 				print ("<TR>\n");
 				print ("<td class='td_pisos'><img src='" . $resultado['imagen'] . "'></td>\n");
 				print ("<td class='td_pisos'>" . $resultado['calle'] . "</td>\n");
@@ -37,9 +43,13 @@ $conexion=mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 				print ("</TR>\n");
 			}
 			print ("</TABLE>\n");
-		} else {
-			print ("No hay Pisos."); 
+
 		}
+      else {
+		 print ("No hay pisos."); 
+	  }
+// Cerrar 
+mysqli_close ($conexion);
 	}
 
 ?>
